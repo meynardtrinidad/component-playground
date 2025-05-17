@@ -1,4 +1,24 @@
-# Logs
+# dependencies
+/.pnp
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+node_modules
+dist
+dist-ssr
+*.local
+
+# testing
+/coverage
+
+# next.js
+/.next/
+/out/
+
+# logs
 logs
 *.log
 npm-debug.log*
@@ -6,13 +26,9 @@ yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
+*storybook.log
 
-node_modules
-dist
-dist-ssr
-*.local
-
-# Editor directories and files
+# editor directories and files
 .vscode/*
 !.vscode/extensions.json
 .idea
@@ -22,3 +38,26 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# production
+/build
+
+# misc
+.DS_Store
+*.pem
+/storybook-static
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# env files (can opt-in for commiting if needed)
+.env*
+
+# vercel
+.vercel
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
